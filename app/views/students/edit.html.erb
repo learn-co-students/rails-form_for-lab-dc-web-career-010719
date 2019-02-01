@@ -1,0 +1,7 @@
+<h1>Edit <%= @student.to_s %></h1>
+
+<%= render "student_form" %>
+
+<br>
+<%= link_to "Back to #{@student.to_s}'s detail page'", @student %><br>
+<%= link_to "Back to Index Page", students_path %>

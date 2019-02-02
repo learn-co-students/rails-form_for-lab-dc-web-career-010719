@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :students, only: [:new, :create, :show, :edit, :update, :index]
+  resources :school_classes, except: [:delete]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

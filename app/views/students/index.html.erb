@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Students Page</title>
+  </head>
+  <body>
+    <h1>Here is the list of all students!</h1>
+    <%@students.each do |student|%>
+    <h2><%=link_to student.to_s, student_path(student)%></h2>
+    <%end%>
+    <h1><%=link_to "Create a new student", new_student_url%></h1>
+  </body>
+</html>
